@@ -25,6 +25,8 @@ def create_app(config, should_register_blueprints=True):
     if should_register_blueprints:
         register_blueprints(app)
 
+    return app
+
 
 def register_blueprints(app):
     from sjtuannouncements.controller import bp_announcement
