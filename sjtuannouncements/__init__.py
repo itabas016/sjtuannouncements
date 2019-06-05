@@ -30,4 +30,4 @@ def create_app(config, should_register_blueprints=True):
 
 def register_blueprints(app):
     from sjtuannouncements.controller import bp_announcement
-    app.register_blueprints(bp_announcement)
+    app.register_blueprint(bp_announcement)
